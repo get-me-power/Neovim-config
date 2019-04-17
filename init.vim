@@ -1,28 +1,3 @@
-set completeopt=menuone
-set autoindent
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set hidden
-set nowrap
-set incsearch
-set number
-set showmatch
-set smarttab
-set whichwrap=b,s,<,>,[,]
-set laststatus=2
-set nobackup
-set noswapfile
-set background=dark
-filetype plugin indent on
-
-if has('mouse')
-    set mouse=a
-endif
-
-if &compatible
-    set nocompatible
-endif
 " setting dein
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
