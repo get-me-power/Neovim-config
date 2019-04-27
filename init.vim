@@ -41,6 +41,7 @@ set laststatus=2
 set nobackup
 set noswapfile
 set background=dark
+set wildoptions=pum
 filetype plugin indent on
 
 if has('mouse')
@@ -65,6 +66,12 @@ augroup fileTypeIndent
     autocmd BufNewFile,BufRead *.html setlocal tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
 
+"goのsyntax強化
+autocmd FileType go :highlight goErr cterm=bold ctermfg=214
+autocmd FileType go :match goErr /\<err\>/
+
+augroup END
+
 "setting keymap
 command! -nargs=* T split | terminal <args>
 
@@ -85,5 +92,3 @@ nnoremap sw <C-w>w
 
 "Defxコマンドをスペース+dに当てる"
 nnoremap <Leader>d :Defx<CR>
-
-
