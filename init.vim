@@ -92,3 +92,5 @@ nnoremap sw <C-w>w
 
 "Defxコマンドをスペース+dに当てる"
 nnoremap <Leader>d :Defx<CR>
+"nohコマンドをescに"
+nnoremap <ESC><ESC> :nohlsearch<CR>
