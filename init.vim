@@ -70,8 +70,6 @@ augroup END
 autocmd FileType go :highlight goErr cterm=bold ctermfg=214
 autocmd FileType go :match goErr /\<err\>/
 
-augroup END
-
 "setting keymap
 command! -nargs=* T split | terminal <args>
 
@@ -94,3 +92,11 @@ nnoremap sw <C-w>w
 nnoremap <Leader>d :Defx<CR>
 "nohコマンドをescに"
 nnoremap <ESC><ESC> :nohlsearch<CR>
+
+"hjkl縛り"
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+
