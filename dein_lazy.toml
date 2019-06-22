@@ -15,7 +15,7 @@ repo = 'Shougo/neco-syntax'
 on_source= ['deoplete.nvim']
 
 [[plugins]]
-repo = 'zchee/deoplete-jedi'
+repo = 'deoplete-plugins/deoplete-jedi'
 on_ft = 'python'
 on_source = ['deoplete.nvim']
 
