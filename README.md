@@ -1,5 +1,11 @@
 # This is my Neovim config file
 
+# Requirement
+
+[nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+
+[gocode](https://github.com/nsf/gocode)
+
 ## What is Use
 
 ### 1. Install pynvim
