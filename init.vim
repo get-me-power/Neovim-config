@@ -91,7 +91,7 @@ nnoremap <Leader>s :split<CR>
 nnoremap sw <C-w>w
 
 "Defxコマンドをスペース+dに当てる"
-nnoremap <Leader>d :Defx<CR>
+nnoremap <Leader>d :Defx -columns=icons:filename:type<CR>
 "nohコマンドをescに"
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
