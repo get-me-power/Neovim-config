@@ -44,6 +44,7 @@ set nobackup
 set noswapfile
 set background=dark
 set wildoptions=pum
+set noshowmode
 filetype plugin indent on
 
 if has('mouse')
