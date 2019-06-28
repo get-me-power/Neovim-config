@@ -197,7 +197,7 @@ repo = 'vim-jp/autofmt'
 repo = 'kazukazuinaina/commentout.vim'
 
 [[plugins]]
-repo = 'kazukazuinaina/vim-devicons'
+repo = 'ryanoasis/vim-devicons'
 hook_add = '''
 let g:webdevicons_enable_denite = 1
 '''
