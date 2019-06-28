@@ -129,6 +129,7 @@ endfunction
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
+depends = 'vim-devicons'
 hook_add = '''
 
 autocmd FileType denite call s:denite_my_settings()
@@ -196,7 +197,10 @@ repo = 'vim-jp/autofmt'
 repo = 'kazukazuinaina/commentout.vim'
 
 [[plugins]]
-repo = 'ryanoasis/vim-devicons'
+repo = 'kazukazuinaina/vim-devicons'
+hook_add = '''
+let g:webdevicons_enable_denite = 1
+'''
 
 [[plugins]]
 repo = 'kristijanhusak/defx-icons'
