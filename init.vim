@@ -1,4 +1,4 @@
-" setting dein
+" ----------setting dein.vim------------- "
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 if &runtimepath !~# 'dein.vim'
@@ -45,6 +45,9 @@ set noswapfile
 set background=dark
 set wildoptions=pum
 set noshowmode
+
+" ---------setting autofmt------------ "
+set formatexpr=autofmt#japanese#formatexpr()
 filetype plugin indent on
 
 if has('mouse')
