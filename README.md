@@ -6,6 +6,8 @@
 
 [gocode](https://github.com/nsf/gocode)
 
+[vint](https://github.com/Kuniwak/vint)
+
 ## What is Use
 
 ### 1. Install pynvim
