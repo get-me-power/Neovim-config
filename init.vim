@@ -3,7 +3,7 @@ let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 if &runtimepath !~# 'dein.vim'
   if !isdirectory(s:dein_repo_dir)
-    execute '!git clone https://github.com/Shougo/dein.vim', s:dein_repo_dir
+    execute '!git clone https://github.com/Shougo/dein.vim '. s:dein_repo_dir
   endif
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
@@ -57,9 +57,6 @@ endif
 if &compatible
   set nocompatible
 endif
-
-"shellの設定"
-set sh=zsh
 
 "shellのキーバインド設定"
 tnoremap <silent> <ESC> <C-\><C-n>
