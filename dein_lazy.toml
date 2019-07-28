@@ -2,18 +2,23 @@
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
 on_event = "InsertCharPre"
-
 hook_source = '''
-let g:deoplete#enable_at_startup   = 1
-let g:deoplete#enable_smart_case = 1
-let g:deoplete#file#enable_buffer_path = 1
-let g:deoplete#auto_complete_delay = 0
+  let g:deoplete#enable_at_startup = 1
+  let g:deoplete#enable_smart_case = 1
+  let g:deoplete#file#enable_buffer_path = 1
+  let g:deoplete#auto_complete_delay = 0
 '''
 
 [[plugins]]
 repo = 'tbodt/deoplete-tabnine'
 build = './install.sh'
 on_source = ['deoplete.nvim']
+hook_source = '''
+  call deoplete#custom#var('tabnine', {
+    \ 'line_limit': 30,
+    \ 'max_num_results': 3,
+  \ })
+'''
 
 [[plugins]]
 repo = 'Shougo/neco-syntax'
@@ -34,9 +39,9 @@ on_source = ['deoplete.nvim']
 repo = 'Shougo/neoinclude.vim'
 on_event = 'InsertEnter'
 hook_source = '''
-    if has('mac')
-      let g:neoinclude#paths = {'cpp': '/Library/Developer/CommandLineTools/usr/include/c++/v1'}
-    endif
+  if has('mac')
+    let g:neoinclude#paths = {'cpp': '/Library/Developer/CommandLineTools/usr/include/c++/v1'}
+  endif
 '''
 
 [[plugins]]
@@ -55,6 +60,6 @@ on_ft = 'go'
 on_event = 'InsertEnter'
 depends = ['deoplete.nvim']
 hook_source = '''
-    let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
-    let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+  let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
+  let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 '''
