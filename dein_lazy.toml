@@ -40,7 +40,12 @@ repo = 'Shougo/neoinclude.vim'
 on_event = 'InsertEnter'
 hook_source = '''
   if has('mac')
-    let g:neoinclude#paths = {'cpp': '/Library/Developer/CommandLineTools/usr/include/c++/v1'}
+    augroup fileType
+      autocmd FileType cpp let g:neoinclude#paths = {
+      \ 'cpp': '/Library/Developer/CommandLineTools/usr/include/c++/v1'}
+      autocmd FileType c let g:neoinclude#paths = {
+      \ 'c': '/Library/Developer/CommandLineTools/usr/include/c++/v1'}
+    augroup END
   endif
 '''
 
