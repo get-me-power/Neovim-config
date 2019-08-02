@@ -219,4 +219,4 @@ let g:defx_icons_nested_closed_tree_icon = ''
 '''
 
 [[plugins]]
-repo = 'w0rp/ale'
+repo = 'dense-analysis/ale'
