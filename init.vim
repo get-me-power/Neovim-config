@@ -71,11 +71,12 @@ augroup fileTypeIndent
   autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType eruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType vim setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd FileType go :highlight goErr cterm=bold ctermfg=214
+  autocmd FileType go :match goErr /\<err\>/
 augroup END
 
 "goのsyntax強化
-autocmd FileType go :highlight goErr cterm=bold ctermfg=214
-autocmd FileType go :match goErr /\<err\>/
+
 
 "setting keymap
 command! -nargs=* T split | terminal <args>
