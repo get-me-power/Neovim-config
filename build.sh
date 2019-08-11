@@ -26,8 +26,7 @@ else
     else
         echo 'git pull is success!'
         # build
-        cd ~/vim/src
-        echo 'start build vim OK? [yes/no]'
+        echo 'start build Neovim OK? [yes/no]'
         read answer
         if [ "$answer" == "yes" ]; then
             echo 'build done!'
