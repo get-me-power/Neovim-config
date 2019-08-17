@@ -220,3 +220,6 @@ let g:defx_icons_nested_closed_tree_icon = ''
 
 [[plugins]]
 repo = 'dense-analysis/ale'
+
+[[plugins]]
+repo = 'tyru/open-browser-github.vim'
