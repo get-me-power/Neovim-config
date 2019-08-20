@@ -29,7 +29,6 @@ else
         echo 'start build Neovim OK? [yes/no]'
         read answer
         if [ "$answer" == "yes" ]; then
-            echo 'build done!'
             cd ~/neovim
             sudo rm -rf ~/neovim/build
             sudo make CMAKE_BUILD_TYPE=Release
