@@ -223,3 +223,11 @@ repo = 'dense-analysis/ale'
 
 [[plugins]]
 repo = 'tyru/open-browser-github.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+on_ft = ['python', 'go']
+depends = ['async.vim', 'deoplete-vim-lsp']
