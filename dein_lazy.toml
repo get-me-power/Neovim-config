@@ -55,3 +55,8 @@ on_event = 'InsertEnter'
 [[plugins]]
 repo = 'lighttiger2505/deoplete-vim-lsp'
 depends = 'deoplete.nvim'
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-jedi'
+on_ft = 'python'
+on_source = ['deoplete.nvim']
