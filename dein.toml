@@ -2,7 +2,7 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'vim-airline/vim-airline'
+repo = 'kazukazuinaina/vim-airline'
 hook_add = '''
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -232,3 +232,11 @@ repo = 'prabirshrestha/async.vim'
 repo = 'prabirshrestha/vim-lsp'
 on_ft = ['python', 'go']
 depends = ['async.vim', 'deoplete-vim-lsp']
+
+[[plugins]]
+repo ='lambdalisue/gina.vim'
+hook_add = '''
+call gina#custom#command#option('status', '--opener', 'vsplit')
+call gina#custom#command#option('diff', '--opener', 'vsplit')
+'''
+ 
