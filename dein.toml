@@ -2,7 +2,7 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'kazukazuinaina/vim-airline'
+repo = 'vim-airline/vim-airline'
 hook_add = '''
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
