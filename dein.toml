@@ -238,4 +238,6 @@ hook_add = '''
 call gina#custom#command#option('status', '--opener', 'vsplit')
 call gina#custom#command#option('diff', '--opener', 'vsplit')
 '''
- 
+
+[[plugins]]
+repo = 'jceb/vim-orgmode'
