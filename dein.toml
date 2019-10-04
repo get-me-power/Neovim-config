@@ -241,3 +241,6 @@ call gina#custom#command#option('diff', '--opener', 'vsplit')
 
 [[plugins]]
 repo = 'jceb/vim-orgmode'
+
+[[plugins]]
+repo = 'itchyny/calendar.vim'
