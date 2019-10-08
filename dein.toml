@@ -244,3 +244,9 @@ repo = 'jceb/vim-orgmode'
 
 [[plugins]]
 repo = 'itchyny/calendar.vim'
+
+[[plugins]]
+repo = 'glidenote/memolist.vim'
+hook_add = '''
+let g:memolist_denite = 1
+'''
