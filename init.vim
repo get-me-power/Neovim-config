@@ -1,3 +1,6 @@
+set encoding=utf-8
+scriptencoding utf-8
+
 " ----------setting dein.vim------------- "
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -26,6 +29,7 @@ endif
 " ----setting init.vim -----"
 syntax enable
 colorscheme gotham256
+set nowrap
 set completeopt=menuone
 set autoindent
 set expandtab
@@ -33,7 +37,6 @@ set tabstop=4
 set shiftwidth=4
 set hidden
 set hlsearch
-set nowrap
 set incsearch
 set number
 set showmatch
@@ -73,6 +76,7 @@ augroup fileTypeIndent
   autocmd FileType vim setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd FileType go :highlight goErr cterm=bold ctermfg=214
   autocmd FileType go :match goErr /\<err\>/
+  autocmd FileType markdown setlocal wrap
 augroup END
 
 "goのsyntax強化
