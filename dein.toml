@@ -219,7 +219,7 @@ let g:defx_icons_nested_closed_tree_icon = ''
 
 [[plugins]]
 repo = 'dense-analysis/ale'
-on_ft = ['vim']
+on_ft = ['vim', 'python']
 
 [[plugins]]
 repo = 'tyru/open-browser-github.vim'
@@ -231,6 +231,9 @@ repo = 'prabirshrestha/async.vim'
 repo = 'prabirshrestha/vim-lsp'
 on_ft = ['python', 'go']
 depends = ['async.vim', 'deoplete-vim-lsp']
+hook_add = '''
+let g:lsp_diagnostics_echo_cursor = 1
+'''
 
 [[plugins]]
 repo ='lambdalisue/gina.vim'
@@ -250,3 +253,6 @@ repo = 'glidenote/memolist.vim'
 hook_add = '''
 let g:memolist_denite = 1
 '''
+
+[[plugins]]
+repo = 'kazukazuinaina/Weather.vim'

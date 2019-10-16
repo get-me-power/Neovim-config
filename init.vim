@@ -173,13 +173,13 @@ if executable('gopls')
   augroup END
 endif
 
-if (executable('pyls'))
-  augroup LspPython
-    autocmd!
-    autocmd User lsp_setup call lsp#register_server({
-          \ 'name': 'pyls',
-          \ 'cmd': { server_info -> [$PYENV_ROOT.'/shims/pyls'] },
-          \ 'whitelist': ['python'],
-          \})
-  augroup END
-endif
+"if (executable('pyls'))
+"  augroup LspPython
+"    autocmd!
+"    autocmd User lsp_setup call lsp#register_server({
+"          \ 'name': 'pyls',
+"          \ 'cmd': { server_info -> [$PYENV_ROOT.'/shims/pyls'] },
+"          \ 'whitelist': ['python'],
+"          \})
+"  augroup END
+"endif
