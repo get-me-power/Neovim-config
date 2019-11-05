@@ -105,10 +105,9 @@ nnoremap <Leader>d :Defx -columns=icons:filename:type<CR>
 "nohコマンドをescに"
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
-"hjkl縛り"
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
+noremap <Up> :Gina status<CR>
+noremap <Down> :Gina commit<CR>
+noremap <Left> :Gina diff<CR> 
 noremap <Right> <Nop>
 
 " 補完コマンドの再設定
@@ -124,7 +123,7 @@ function! MyInsCompl()
   elseif c == "k"
     return "\<C-x>\<C-k>"
   elseif c == "t"
-    return "\<C-x>\<C-t>"
+    return "\<C-x>\na<C-t>"
   elseif c == "i"
     return "\<C-x>\<C-i>"
   elseif c == "]"
