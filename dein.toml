@@ -167,8 +167,6 @@ let g:user_emmet_settings = {
 [[plugins]]
 repo = 'tpope/vim-surround'
 
-[[plugins]]
-repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'tpope/vim-markdown'
