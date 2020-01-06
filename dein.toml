@@ -49,7 +49,7 @@ repo = 'vim-airline/vim-airline-themes'
 depends = ['vim-airline']
 
 [[plugins]]
-repo = 'kannokanno/previm'
+repo = 'previm/previm'
 hook_add = '''
 nnoremap <silent> <C-p> :PrevimOpen<CR>
 let g:vim_markdown_folding_disabled = 1
@@ -185,6 +185,18 @@ repo = 'sheerun/vim-polyglot'
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
+hook_add = '''
+let g:quickrun_config = {
+    \    "_" : {
+    \       "runner" : "vimproc",
+    \       "runner/vimproc/updatetime" : 60
+    \   },
+    \   'tex': {
+    \       'command': 'ptex2pdf',
+    \       'exec': ['%c -l -u -ot "-synctex=1 -interaction=nonstopmode" %s', 'open %s:r.pdf']
+    \   },
+    \}
+'''
 
 [[plugins]]
 repo = 'kazukazuinaina/Tweet.vim'
@@ -237,10 +249,6 @@ let g:lsp_diagnostics_echo_cursor = 1
 
 [[plugins]]
 repo ='lambdalisue/gina.vim'
-hook_add = '''
-call gina#custom#command#option('status', '--opener', 'vsplit')
-call gina#custom#command#option('diff', '--opener', 'vsplit')
-'''
 
 [[plugins]]
 repo = 'jceb/vim-orgmode'
@@ -253,6 +261,10 @@ repo = 'glidenote/memolist.vim'
 hook_add = '''
 let g:memolist_denite = 1
 '''
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
 
 [[plugins]]
 repo = 'kazukazuinaina/Weather.vim'

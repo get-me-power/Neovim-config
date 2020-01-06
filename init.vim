@@ -81,7 +81,6 @@ augroup END
 
 "goのsyntax強化
 
-
 "setting keymap
 command! -nargs=* T split | terminal <args>
 
