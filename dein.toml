@@ -267,4 +267,7 @@ repo = 'Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
+repo = 'andymass/vim-matchup'
+
+[[plugins]]
 repo = 'kazukazuinaina/Weather.vim'
