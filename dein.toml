@@ -172,9 +172,6 @@ repo = 'tpope/vim-surround'
 repo = 'tpope/vim-markdown'
 
 [[plugins]]
-repo = 'mattn/webapi-vim'
-
-[[plugins]]
 repo = 'cohama/lexima.vim'
 
 [[plugins]]
@@ -209,12 +206,6 @@ repo = 'vim-jp/autofmt'
 
 [[plugins]]
 repo = 'kazukazuinaina/commentout.vim'
-
-[[plugins]]
-repo = 'ryanoasis/vim-devicons'
-hook_add = '''
-let g:webdevicons_enable_denite = 0
-'''
 
 [[plugins]]
 repo = 'kristijanhusak/defx-icons'
@@ -274,3 +265,9 @@ repo = 'andymass/vim-matchup'
 
 [[plugins]]
 repo = 'kazukazuinaina/Weather.vim'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+hook_add = '''
+let g:webdevicons_enable_denite = 0
+'''
