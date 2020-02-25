@@ -1,4 +1,8 @@
 [[plugins]]
 repo = 'tpope/vim-endwise'
-on_ft = 'ruby'
 on_event = 'InsertEnter'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+on_cmd = 'Gblame'

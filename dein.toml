@@ -168,10 +168,6 @@ let g:user_emmet_settings = {
 [[plugins]]
 repo = 'tpope/vim-surround'
 
-
-[[plugins]]
-repo = 'tpope/vim-markdown'
-
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
@@ -204,9 +200,6 @@ repo = 'kazukazuinaina/Tweet.vim'
 
 [[plugins]]
 repo = 'vim-jp/autofmt'
-
-[[plugins]]
-repo = 'kazukazuinaina/commentout.vim'
 
 [[plugins]]
 repo = 'kristijanhusak/defx-icons'
@@ -267,14 +260,10 @@ let g:webdevicons_enable_denite = 0
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 rev = 'release'
-build = 'yarn install --frozen-lockfile'
-merged = '0'
+merged = 0
 hook_add = '''
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 '''
-
-[[plugins]]
-repo = 'neoclide/coc-denite'
