@@ -2,6 +2,7 @@ set encoding=utf-8
 scriptencoding utf-8
 
 " ----------setting dein.vim------------- "
+let $MYNEOVIM_HOME = expand('~/.config/nvim')
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 if &runtimepath !~# 'dein.vim'
@@ -11,8 +12,8 @@ if &runtimepath !~# 'dein.vim'
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
-let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/dein.toml'
-let s:toml_lazy_file = fnamemodify(expand('<sfile>'), ':h').'/dein_lazy.toml'
+let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/plugin/dein.toml'
+let s:toml_lazy_file = fnamemodify(expand('<sfile>'), ':h').'/plugin/dein_lazy.toml'
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)

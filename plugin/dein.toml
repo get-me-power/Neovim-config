@@ -267,3 +267,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 '''
+hook_post_source = '''
+execute 'source' fnameescape(expand('$MYNEOVIM_HOME/plugin/rd.d/coc.vim'))
+'''
