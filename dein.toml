@@ -230,6 +230,11 @@ repo = 'tyru/open-browser-github.vim'
 
 [[plugins]]
 repo ='lambdalisue/gina.vim'
+hook_add = '''
+noremap <Up> :Gina status<CR>
+noremap <Down> :Gina commit<CR>
+noremap <Left> :Gina diff<CR> 
+'''
 
 [[plugins]]
 repo = 'jceb/vim-orgmode'

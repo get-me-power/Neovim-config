@@ -103,10 +103,6 @@ nnoremap sw <C-w>w
 nnoremap <Leader>d :Defx -columns=icons:filename:type<CR>
 "nohコマンドをescに"
 nnoremap <ESC><ESC> :nohlsearch<CR>
-
-noremap <Up> :Gina status<CR>
-noremap <Down> :Gina commit<CR>
-noremap <Left> :Gina diff<CR> 
 noremap <Right> <Nop>
 
 " 補完コマンドの再設定
@@ -158,26 +154,3 @@ function Indent()
   call setpos('.', save_cursor)
 endfunction
 command -nargs=0 Indent call Indent()
-
-"-----setting vim-lsp-------
-if executable('gopls')
-  augroup LspGo
-    autocmd!
-    autocmd User lsp_setup call lsp#register_server({
-          \ 'name': 'gopls',
-          \ 'cmd': {server_info->['gopls', '-mode', 'stdio']},
-          \ 'whitelist': ['go'],
-          \ })
-  augroup END
-endif
-
-"if (executable('pyls'))
-"  augroup LspPython
-"    autocmd!
-"    autocmd User lsp_setup call lsp#register_server({
-"          \ 'name': 'pyls',
-"          \ 'cmd': { server_info -> [$PYENV_ROOT.'/shims/pyls'] },
-"          \ 'whitelist': ['python'],
-"          \})
-"  augroup END
-"endif
