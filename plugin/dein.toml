@@ -152,9 +152,6 @@ autocmd FileType denite call s:denite_my_settings()
 '''
 
 [[plugins]]
-repo ='flazz/vim-colorschemes'
-
-[[plugins]]
 repo = 'mattn/emmet-vim'
 hook_add = '''
 let g:user_emmet_settings = {
