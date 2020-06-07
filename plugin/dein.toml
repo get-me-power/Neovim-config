@@ -227,7 +227,6 @@ repo = 'kazukazuinaina/Weather.vim'
 
 [[plugins]]
 repo = 'neovim/nvim-lsp'
-merged = 0
 hook_add = '''
 lua << EOF
   require'nvim_lsp'.pyls.setup{}
