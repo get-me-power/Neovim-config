@@ -88,7 +88,7 @@ let mapleader = "\<Space>"
 
 nnoremap <Leader>t :T<CR>
 
-nnoremap <leader>f :Denite file/rec<CR>
+nnoremap <leader>f :Denite file/rec -match-highlight<CR>
 
 "スペース + v で垂直分割"
 nnoremap <Leader>v :vsplit<CR>
