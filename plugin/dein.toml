@@ -174,9 +174,6 @@ let g:quickrun_config = {
 '''
 
 [[plugins]]
-repo = 'kazukazuinaina/Tweet.vim'
-
-[[plugins]]
 repo = 'vim-jp/autofmt'
 
 [[plugins]]
