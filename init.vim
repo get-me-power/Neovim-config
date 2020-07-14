@@ -87,12 +87,11 @@ command! -nargs=* T split | terminal <args>
 let mapleader = "\<Space>"
 
 nnoremap <Leader>t :T<CR>
-
 nnoremap <leader>f :Denite file/rec -match-highlight<CR>
+nnoremap <Leader>g :Denite grep<CR>
 
 "スペース + v で垂直分割"
 nnoremap <Leader>v :vsplit<CR>
-
 nnoremap <Leader>s :split<CR>
 
 "ウインドウ移動ショートカットをswに当てる"
