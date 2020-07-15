@@ -101,7 +101,6 @@ nnoremap sw <C-w>w
 nnoremap <Leader>d :Defx -columns=icons:filename:type<CR>
 "nohコマンドをescに"
 nnoremap <ESC><ESC> :nohlsearch<CR>
-noremap <Right> <Nop>
 
 " 補完コマンドの再設定
 inoremap <expr><Tab> pumvisible() ? "\<C-n>" : MyInsCompl()

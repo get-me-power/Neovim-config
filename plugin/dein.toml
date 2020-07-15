@@ -195,10 +195,10 @@ let g:defx_icons_nested_closed_tree_icon = ''
 [[plugins]]
 repo ='lambdalisue/gina.vim'
 hook_add = '''
-noremap <Up> :Gina status<CR>
-noremap <Down> :Gina commit<CR>
-noremap <Left> :Gina diff<CR> 
-nnoremap <Right> :Gina grep
+nnoremap <Up> :Gina status<CR>
+nnoremap <Down> :Gina commit<CR>
+nnoremap <Left> :Gina diff<CR>
+nnoremap <Right> :Gina grep<CR>
 '''
 
 [[plugins]]
@@ -243,3 +243,6 @@ repo = 'ryanoasis/vim-devicons'
 hook_add = '''
 let g:webdevicons_enable_denite = 0
 '''
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
