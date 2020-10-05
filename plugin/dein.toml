@@ -221,7 +221,7 @@ build = 'make'
 repo = 'andymass/vim-matchup'
 
 [[plugins]]
-repo = 'neovim/nvim-lsp'
+repo = 'neovim/nvim-lspconfig'
 hook_add = '''
 lua << EOF
   require'nvim_lsp'.pyls.setup{}
