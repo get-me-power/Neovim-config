@@ -245,4 +245,20 @@ let g:webdevicons_enable_denite = 0
 '''
 
 [[plugins]]
+repo = 'OmniSharp/omnisharp-vim'
+on_ft = ['cs']
+hook_add = '''
+nnoremap md :OmniSharpDocumentation<CR>
+nnoremap mg :OmniSharpGotoDefinition<CR>
+nnoremap mf :OmniSharpPreviewDefinition<CR>
+'''
+
+[[plugins]]
+repo = 'dense-analysis/ale'
+depends = ['omnisharp-vim']
+on_ft = ['cs']
+
+
+
+[[plugins]]
 repo = 'easymotion/vim-easymotion'
