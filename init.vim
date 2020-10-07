@@ -137,17 +137,26 @@ function! MyInsCompl()
 endfunction
 
 "setting update command"
-function PluginUpdate()
+function s:PluginUpdate()
   if exists('*dein#update()')
     call dein#update()
   endif
 endfunction
-command -nargs=0 PluginUpdate call PluginUpdate()
+command -nargs=0 s:PluginUpdate call PluginUpdate()
 
 "setting indent command
-function Indent()
+function s:Indent()
   let save_cursor = getcurpos()
   execute("normal " . "gg=G")
   call setpos('.', save_cursor)
 endfunction
-command -nargs=0 Indent call Indent()
+command -nargs=0 s:Indent call Indent()
+
+function s:DeleteHiddenBuffers()
+  let tpbl=[]
+  call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
+  for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
+    silent execute 'bwipeout' buf
+  endfor
+endfunction
+command -nargs=0 DeleteHiddenBuffers call s:DeleteHiddenBuffers()
