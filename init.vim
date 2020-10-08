@@ -142,7 +142,7 @@ function s:PluginUpdate()
     call dein#update()
   endif
 endfunction
-command -nargs=0 s:PluginUpdate call PluginUpdate()
+command -nargs=0 PluginUpdate call s:PluginUpdate()
 
 "setting indent command
 function s:Indent()
@@ -150,7 +150,7 @@ function s:Indent()
   execute("normal " . "gg=G")
   call setpos('.', save_cursor)
 endfunction
-command -nargs=0 s:Indent call Indent()
+command -nargs=0 Indent call s:Indent()
 
 function s:DeleteHiddenBuffers()
   let tpbl=[]
